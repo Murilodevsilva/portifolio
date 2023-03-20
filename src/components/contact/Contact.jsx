@@ -1,7 +1,7 @@
 import React from 'react'
 import './contact.css'
 import {MdMarkEmailRead} from 'react-icons/md'
-import {RiMessengerLine} from 'react-icons/ri'
+import {FiInstagram} from 'react-icons/fi'
 import {BsWhatsapp} from 'react-icons/bs'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
@@ -16,22 +16,22 @@ const Contact = () => {
   };
   return (
     <section id='contact'>
-      <h5>Precisando falar comigo ?</h5>
+      <h5>Precisando falar comigo?</h5>
       <h2>Contate-me</h2>
 
       <div className='container contact__container'>
         <div className='contact__options'>
           <article className='contact__option'>
             <MdMarkEmailRead className='contact__option-icon'/>
-            <h4>Email</h4>
+            <h4>E-mail</h4>
             <h5>murilodev.silva@gmail.com</h5>
-            <a href="mailto:murilodev.silva@gmail.com" >Envie um email</a>
+            <a href="mailto:murilodev.silva@gmail.com" >Envie um e-mail</a>
           </article>
           <article className='contact__option'>
-            <RiMessengerLine className='contact__option-icon'/>
+            <FiInstagram className='contact__option-icon'/>
             <h4>Messenger</h4>
             <h5>Murilo Silva</h5>
-            <a href="http://m.me/murilo2ilva" target='_blank'>Envie uma mensagem</a>
+            <a href="https://www.instagram.com/devpartnerweb/" target='_blank'>Envie uma mensagem</a>
           </article>
           <article className='contact__option'>
             <BsWhatsapp className='contact__option-icon'/>
@@ -42,8 +42,8 @@ const Contact = () => {
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder='Seu nome' required />
-          <input type="email" name='email' placeholder='Seu email' required />
-          <textarea name="message" rows="7" placeholder='Oque quer falar ?'></textarea>
+          <input type="email" name='email' placeholder='Seu e-mail' required />
+          <textarea name="message" rows="7" placeholder='Descreva o motivo do seu contato'></textarea>
           <button type='submit' className='btn btn-primary'>Enviar mensagem</button>
         </form>
         
