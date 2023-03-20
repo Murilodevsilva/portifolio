@@ -3,10 +3,11 @@
 }
 .about__container {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 1fr;
     gap:15%;
     padding: 1.5rem;
     border-radius: 2rem;
+    background: var(--color-primary-variant);
 }
 .about__me {
     width: 100%;
@@ -33,7 +34,7 @@
 }
 .about__card{
     font-size: 14px;
-    background-color: var(--color-bg-variant);
+    background-color: var(--color-primary-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 1rem;
@@ -41,24 +42,26 @@
     transition: var(--transition);
 }
 .about__card:hover{
-    background:transparent;
+    background:var(--color-light);
     border-color: var(--color-primary-variant);
     cursor: pointer;
 }
 
 .about__card h5{
     font-size: 0.95rem;
+    color: var(--color-bg-variant);
 }
 .about__card small {
     font-size: 0.7rem;
-    color: var(--color-light);
+    color: var(--color-bg-variant);
 }
 .about__content p {
-    margin: 2rem 0 3rem 2.6rem;
+    margin: 2rem 10rem 3rem 10rem;
     color: var(--color-light);
+    text-align: center;
 }
 .about__content a {
-    margin-left: 15rem;
+    margin-left: 25rem;
 }
 /* ================= MEDIA QUERIES (TELA MEDIO) =================== */
 
