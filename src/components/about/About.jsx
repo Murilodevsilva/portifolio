@@ -16,7 +16,7 @@ const About = () => {
               <article className='about__card'>
                 <FaAward/>
                 <h5>Experiência</h5>
-                <small>Experiência de um pouco mais de 1 ano de trabalho</small>
+                <small>Mais de 1 ano no mercado de trabalho</small>
               </article>
               <article className='about__card'>
                 <SiCodeproject/>

@@ -5,6 +5,7 @@ import IMG2 from '../../assets/projeto-website.png'
 import IMG3 from '../../assets/projeto-coca.png'
 import IMG4 from '../../assets/projeto-ladingpage.png'
 import IMG5 from '../../assets/projeto-urna.png'
+import IMG6 from '../../assets/netflix.png'
 
 const Portfolio = () => {
   return (
@@ -13,6 +14,16 @@ const Portfolio = () => {
       <h2>Portfólio</h2>
 
       <div className='container portfolio__container'>
+      <article className='portfolio__item'>
+          <div className='portfolio__item-image'>
+            <img src={IMG6} alt="" />
+          </div>
+          <h3>Projeto - Netflix</h3>
+          <h5>Nele trabalhei com ReactJs e Javascript.</h5>
+          <div className='portfolio__item-cta'>
+          <a href="https://github.com/Murilodevsilva/clonenetflix2.0/" className='btn' target='_blank'>Github</a>
+          <a href="https://clonenetflix2-0-yriw.vercel.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
+        </div> </article>
         <article className='portfolio__item'>
           <div className='portfolio__item-image'>
             <img src={IMG1} alt="" />
